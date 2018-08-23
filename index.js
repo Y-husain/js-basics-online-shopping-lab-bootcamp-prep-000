@@ -9,6 +9,7 @@ function setCart(c) {
   return cart;
 }
 
+<<<<<<< HEAD
 
 function addToCart(itemName) {
 // write your code here
@@ -28,11 +29,23 @@ for ( var j= 0; j<cart.length; j++){
 
 }
 return total ;
+=======
+
+function addToCart(itemName) {
+// write your code here
+
+var itemPrice= Math.floor(Math.random() * Math.floor(100));
+cart.push({ itemName: itemName, itemPrice: itemPrice  })
+
+return (`${itemName} has been added to your cart.`)
+  
+>>>>>>> 6240710899d6d8e436ca7e4e329f6cec749786d8
 }
 
 
 function placeOrder(cardNumber) {
   // write your code here
+<<<<<<< HEAD
   if (!cardNumber){
   console.log(`Sorry, we don't have a credit card on file for you.`);
  }
@@ -113,3 +126,16 @@ else {
 
 }
 viewCart()
+=======
+var total =0;
+for ( var j= 0; j<cart.length; j++){  
+  total += Object.values(cart[j])
+
+}
+return total ;
+}
+total
+
+
+
+>>>>>>> 6240710899d6d8e436ca7e4e329f6cec749786d8
